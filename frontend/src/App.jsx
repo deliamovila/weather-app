@@ -13,8 +13,8 @@ function App() {
     try {
 
       const response = await axios.get(
-  `${import.meta.env.VITE_API_URL}/api/weather?city=${city}`
-);
+        `${import.meta.env.VITE_API_URL}/api/weather?city=${city}`
+      );
 
       setWeather(response.data);
 
@@ -47,7 +47,7 @@ function App() {
 
         <button
           onClick={getWeather}
-          className="bg-blue-600 text-white px-6 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition"
+          className="bg-red-600 text-white px-6 py-4 rounded-xl text-lg font-bold hover:bg-red-700 transition"
         >
           Search
         </button>
