@@ -6,6 +6,12 @@ function WeatherCard({ weather }) {
         {weather.name}
       </h2>
 
+      <img
+  src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+  alt="weather icon"
+  className="mx-auto"
+/>
+
       <div className="mb-4">
 
         <p className="text-6xl font-bold text-blue-600">
@@ -22,7 +28,7 @@ function WeatherCard({ weather }) {
         {weather.weather[0].description}
       </p>
 
-      <p className="bg-yellow-100 p-3 rounded-xl mb-5 font-semibold text-yellow-800">
+      <p className="bg-pink-200 text-orange-700 p-4 rounded-xl text-center font-semibold">
         {weather.advice}
       </p>
 
